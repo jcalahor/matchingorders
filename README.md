@@ -144,7 +144,9 @@ Compilation:
 The project is compiled with CMAKE. The following commans build the project:
 
  make -H. -Bbuild
+ 
  cmake --build build -- -j3
+ 
  
  
 In order to run the project just run (refer to the source code for command lined arguments:
