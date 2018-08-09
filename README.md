@@ -70,11 +70,17 @@ Outputs:
 
 Notes:
     * The implementation is a standalone Linux console application 
+    
     * The app respond to malformed input and other errors with a RESULT
+    
       of type 'E' and a descriptive error message
+      
 	  * All orders are standard limit orders
+	  
     * Orders are  selected for crossing using price-time (FIFO) priority
+    
     * Orders for different symbols should do not cross and the book supports multiple symbols
+    
 
 Example session:
     INPUT                                   | OUTPUT
