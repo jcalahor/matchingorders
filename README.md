@@ -67,28 +67,53 @@ Example session:
     INPUT                                   | OUTPUT
     ============================================================================
     "O 10000 IBM B 10 100.00000"            | results.size() == 0
+    
     "O 10001 IBM B 10 99.00000"             | results.size() == 0
+    
     "O 10002 IBM S 5 101.00000"             | results.size() == 0
+    
     "O 10003 IBM S 5 100.00000"             | results.size() == 2
+    
                                             | results[0] == "F 10003 IBM 5 100.00000"
+					    
                                             | results[1] == "F 10000 IBM 5 100.00000"
+					    
     "O 10004 IBM S 5 100.00000"             | results.size() == 2
+    
                                             | results[0] == "F 10004 IBM 5 100.00000"
+					    
                                             | results[1] == "F 10000 IBM 5 100.00000"
+					    
     "X 10002"                               | results.size() == 1
+    
                                             | results[0] == "X 10002"
+					    
     "O 10005 IBM B 10 99.00000"             | results.size() == 0
+    
     "O 10006 IBM B 10 100.00000"            | results.size() == 0
+    
     "O 10007 IBM S 10 101.00000"            | results.size() == 0
+    
     "O 10008 IBM S 10 102.00000"            | results.size() == 0
+    
     "O 10008 IBM S 10 102.00000"            | results.size() == 1
+    
                                             | results[0] == "E 10008 Duplicate order id"
+					    
     "O 10009 IBM S 10 102.00000"            | results.size() == 0
+    
     "P"                                     | results.size() == 6
+    
                                             | results[0] == "P 10009 IBM S 10 102.00000"
+					    
                                             | results[1] == "P 10008 IBM S 10 102.00000"
+					    
                                             | results[2] == "P 10007 IBM S 10 101.00000"
+					    
                                             | results[3] == "P 10006 IBM B 10 100.00000"
+					    
                                             | results[4] == "P 10001 IBM B 10 99.00000"
+					    
                                             | results[5] == "P 10005 IBM B 10 99.00000"
+					    
 */
