@@ -137,7 +137,10 @@ Example session:
                                             | results[4] == "P 10001 IBM B 10 99.00000"
 					    
                                             | results[5] == "P 10005 IBM B 10 99.00000"
-					    
+Entry point:
+
+The main function is defined on /simple_cross.cpp
+
 			
 Compilation:
 
