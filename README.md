@@ -69,6 +69,7 @@ Outputs:
     ORD_PX:   positive double precision value representing original price of the order (7.5 format)
 
 Notes:
+
     * The implementation is a standalone Linux console application 
     
     * The app respond to malformed input and other errors with a RESULT
