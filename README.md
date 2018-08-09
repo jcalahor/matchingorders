@@ -84,8 +84,10 @@ Notes:
     
 
 Example session:
+
     INPUT                                   | OUTPUT
     ============================================================================
+    
     "O 10000 IBM B 10 100.00000"            | results.size() == 0
     
     "O 10001 IBM B 10 99.00000"             | results.size() == 0
@@ -138,11 +140,15 @@ Example session:
 					    
 			
 Compilation:
+
 The project is compiled with CMAKE. The following commans build the project:
+
  make -H. -Bbuild
  cmake --build build -- -j3
  
+ 
 In order to run the project just run (refer to the source code for command lined arguments:
+
 	./cross_app
 
 
