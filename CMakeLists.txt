@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 2.8)
+set(CMAKE_CXX_FLAGS "-std=c++11 -msse4.2 -D_REENTRANT -DLinux -m64  -fPIC ${WARNING_FLAGS} ${GCC_WARNING_FLAGS}")
+set(CMAKE_CXX_FLAGS_DEBUG "-g ${CMAKE_CXX_FLAGS} ${PEDANTIC_FLAGS}")
+set(CMAKE_CXX_FLAGS_RELEASE "-std=c++11 -O3")
+project (cross_app)
+add_executable(cross_app simple_cross.cpp order.cpp command.cpp order_blotter.cpp order_filler.cpp orders_container.cpp)
