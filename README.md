@@ -1,30 +1,43 @@
 Basic sample of how orders are matched in an exchange
 
 Overview of the program:
+
     * Accept/remove orders as they are entered and keep a book of
       resting orders
+      
     * Determine if an accepted order would be satisfied by previously
       accepted orders (i.e. a buy would cross a resting sell)
+      
     * Output (print) crossing events and remove completed (fully filled)
       orders from the book
+      
 
 Inputs:
+
     A string of space separated values representing an action.  The number of
     values is determined by the action to be performed and have the following
     format:
 
     ACTION [OID [SYMBOL SIDE QTY PX]]
+    
 
     ACTION: single character value with the following definitions
+    
     O - place order, requires OID, SYMBOL, SIDE, QTY, PX
+    
     X - cancel order, requires OID
+    
     P - print sorted book (see example below)
+    
 
     OID: positive 32-bit integer value which must be unique for all orders
+    
 
     SYMBOL: alpha-numeric string value. Maximum length of 8.
+    
 
     SIDE: single character value with the following definitions
+    
     B - buy
     S - sell
 
