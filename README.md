@@ -149,7 +149,7 @@ The project is compiled with CMAKE. The following commans build the project:
  
  
  
-In order to run the project just run (refer to the source code for command lined arguments:
+In order to run the project just run (refer to the source code for command lined arguments):
 
 	./cross_app
 
